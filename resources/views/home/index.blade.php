@@ -14,8 +14,8 @@
 <!--- - - - - - - -navbar - - - - - - -->
     @include('partials.navbar_home')
 <!--- - - - - - - -navbar - - - - - - -->
- 
 
+<!-- peiquangdai la thang occho -->
 
 <!-- - - - - - - -  carousel- - - - - - - - - -->
     @include('partials.carousel')

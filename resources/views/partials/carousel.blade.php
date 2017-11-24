@@ -15,30 +15,27 @@
   <div class="slide-1"></div>
   <div class="hero">
     <hgroup>
-        <h1>We are creative</h1>        
-        <h3>Get start your next awesome project</h3>
+        <h1>Giảm cân hiệu quả</h1>        
+        <h3>Thân hình cân đối</h3>
     </hgroup>
-    <button class="btn btn-hero btn-lg" role="button">See all features</button>
   </div>
 </div>
 <div class="item slides">
   <div class="slide-2"></div>
   <div class="hero">        
     <hgroup>
-        <h1>We are smart</h1>        
-        <h3>Get start your next awesome project</h3>
+        <h1>Giảm cân nhanh</h1>        
+        <h3>Bài tập giảm cân hiệu quả</h3>
     </hgroup>       
-    <button class="btn btn-hero btn-lg" role="button">See all features</button>
   </div>
 </div>
 <div class="item slides">
   <div class="slide-3"></div>
   <div class="hero">        
     <hgroup>
-        <h1>We are amazing</h1>        
-        <h3>Get start your next awesome project</h3>
+        <h1>Giảm cân 1 cách khoa hoc</h1>        
+        <h3>thu hút ánh nhìn</h3>
     </hgroup>
-    <button class="btn btn-hero btn-lg" role="button">See all features</button>
   </div>
 </div>
 </div> 

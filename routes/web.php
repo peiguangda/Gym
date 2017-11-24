@@ -19,3 +19,18 @@ Route::get('/home',[
 	'as' => 'home',
 	'uses' => 'HomeController@index'
 ]);
+
+Route::get('/tutorial',[
+	'as' => 'tutorial',
+	'uses' => 'TutorialController@index'
+]);
+
+Route::post('/tutorial/result',[
+	'as' => 'tutorial.result',
+	'uses' => 'TutorialController@create'
+]);
+
+Route::get('/programs',[
+	'as' => 'programs',
+	'uses' => 'ProgramController@index'
+]);

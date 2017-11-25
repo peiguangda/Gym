@@ -34,3 +34,5 @@ Route::get('/programs',[
 	'as' => 'programs',
 	'uses' => 'ProgramController@index'
 ]);
+Auth::routes();
+

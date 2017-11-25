@@ -19,7 +19,7 @@ class CreateActionsTable extends Migration
             $table->string('rate');
             $table->string('trainer');
             $table->float('timepractice');
-            $table->string('level');
+            $table->string('lever');
             $table->integer('id_program')->unsigned();;
             $table->foreign('id_program')->references('id')->on('programs');
             $table->timestamps();

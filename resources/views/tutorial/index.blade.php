@@ -2,8 +2,6 @@
 @section('content')
 
 <div class="container">
-	<form action="{{route('tutorial.result')}}" method="POST">
-		{!! csrf_field() !!}
 		<div class="form-group">
 			<label for="weight">Weight</label>
 			<input class="form-control input-sm" type="float" id="weight" name="weight">
@@ -15,11 +13,14 @@
 		</div>
 
 		<div class="form-group">
-			<label for="high">High</label>
-			<input class="form-control input-sm" type="float" id="high" name="high">
+			<label for="high">Height</label>
+			<input class="form-control input-sm" type="float" id="height" name="height">
 		</div>
 
-		<button type="submit" class="btn btn-default">Submit</button>
-	</form>
+		<button type="submit" class="btn btn-default" id="getProgram">Submit</button>
 </div><br>
+
+<div class="container" id="showProgram">
+	
+</div>
 @endsection

@@ -25,14 +25,20 @@ Route::get('/tutorial',[
 	'uses' => 'TutorialController@index'
 ]);
 
-Route::post('/tutorial/result',[
+Route::get('/tutorial/weight/{weight}/age/{age}/height/{height}',[
 	'as' => 'tutorial.result',
 	'uses' => 'TutorialController@create'
+]);
+
+Route::get('/programs/{id}',[
+	'as' => 'program.show',
+	'uses' => 'ProgramController@show'
 ]);
 
 Route::get('/programs',[
 	'as' => 'programs',
 	'uses' => 'ProgramController@index'
 ]);
+
 Auth::routes();
 

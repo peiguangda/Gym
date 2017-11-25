@@ -8,7 +8,7 @@
             <h2>{{$program->name}}</h2>
             <img src="{{$program->image}}">
             <p>{{$program->descript}}</p>
-            <p><a href="#">Read more</a></p>
+            <p><a href="{{route('program.show',$program->id)}}">Read more</a></p>
         </div>
     </div>
 @endforeach

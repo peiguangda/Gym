@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Program;
+use App\Action;
 
 class ProgramController extends Controller
 {
@@ -14,4 +15,12 @@ class ProgramController extends Controller
     	return view('programs.index')->with('programs', $programs);
     }
 
+    public function show($id)
+    {
+
+    	$actions = Action::where('id_program',$id)
+    						->get();
+    	return view('programs.show')->with('actions', $actions);
+    }
+    
 }

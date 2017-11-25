@@ -69,5 +69,37 @@
   <script src="js/main.js"></script>
 </body>
 
+<script>
+  $.ajaxSetup({
+      headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+  });
+
+  $("button#getProgram").on('click',function(){
+    var weight = $('#weight').val();
+    var age = $('#age').val();
+    var height = $('#height').val();
+    var URL = "http://localhost:8000/tutorial/weight/" + weight + "/age/" + age + "/height/" + height;
+    console.log(URL);
+    $.ajax({
+      type : 'GET',
+      url : URL,
+      cache : false,
+      error: function(data){
+        console.log("loi roi");
+      },
+
+      success : function(msg){
+        console.log("ngon");
+        var html = "";
+        html += "<p>adsf</p>"
+        $("div#showProgram").append(html);
+      }
+
+    })
+  });
+</script>
+
 </html>
 

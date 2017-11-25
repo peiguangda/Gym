@@ -13,20 +13,17 @@ class TutorialController extends Controller
     	return view('tutorial.index');	
     }
 
-    public function create(Request $request)
+    public function create($weight, $age, $height)
     {
-    	$weight = $request->get('weight');
-    	$age = $request->get('age');
-    	$high = $request->get('high');
-    	if ($age <= 40 && $weight >= $high + 9) {
+    	if ($age <= 40 && $weight >= $height + 9) {
     		//todo return route program muc do nang
-    		dd('nang');
+    		return "nang";
     	} elseif ($age > 50) {
     		//todo return route program muc do nhe
-    		dd('nhe');
+    		return 'nhe';
     	} else {
     		//todo return route program muc do trung binh
-    		dd('trungbinh');
+    		return 'trungbinh';
     	} 	
     }
 }

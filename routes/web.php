@@ -47,3 +47,8 @@ Route::get('/edit',[
 	'uses' => 'UsersController@getedit'
 ]);
 Route::post('edit','UsersController@postedit');
+
+Route::get('/search',[
+	'as'=>'search',
+	'uses'=>'SearchController@getSearch'
+]);

@@ -12,8 +12,8 @@
 
     <div class="collapse navbar-collapse js-navbar-collapse">
         <ul class="nav navbar-nav" style="padding: 10px;">
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Tìm theo tên huấn luận viên">
+            <form class="form-inline my-2 my-lg-0" method="get" id="searchform" action="{{route('search')}}">
+              <input class="form-control mr-sm-2" type="text" name="key" placeholder="Tìm theo tên huấn luận viên">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </ul>

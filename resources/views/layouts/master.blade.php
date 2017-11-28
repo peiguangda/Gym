@@ -67,6 +67,7 @@
 
   <!-- Main JS (Do not remove) -->
   <script src="js/main.js"></script>
+  @yield('script')
 </body>
 
 <script>

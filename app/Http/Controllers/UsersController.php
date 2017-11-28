@@ -9,10 +9,10 @@ use Auth;
 
 class UsersController extends Controller
 {
-    public function getedit(){
+    public function edit(){
     	//
-    	$user=Auth::user();
-   return view('users.edit',['user'=>$user]);
+    	$user = Auth::user();
+        return view('users.edit',['user'=>$user]);
     }
 
     public function postedit(Request $request){
@@ -42,14 +42,14 @@ class UsersController extends Controller
         		'repeatpassword.required'=>'Bạn chưa nhập lại mật khẩu',
         		'repeatpassword.same'=>'Mật khẩu không khớp'
         	]);
-        $user->password = Hash::make($request->password);
+            $user->password = Hash::make($request->password);
+        }
         $user->purpose=$request->purpose;
         $user->birthday=$request->birthday;
         $user->address=$request->address;
         $user->weight=$request->weight;
         $user->job=$request->job;
         $user->username=$request->username;
-    }
         $user->save();
         return redirect()->back()->with('thongbao','Bạn đã update thành công');
     }

@@ -55,7 +55,7 @@
 			</div>
 			<div class="form-group">
 				<label>Birth day:</label>
-				<input class="form-control" name="birthday" placeholder="Nhập birthday người dùng"
+				<input class="form-control" name="birthday" type="date" placeholder="Nhập birthday người dùng"
 				value="{{$user->birthday}}" />
 			</div>
 			<div class="form-group">

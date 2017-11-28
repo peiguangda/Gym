@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Action;
+use Response;
 
 class TutorialController extends Controller
 {
@@ -16,14 +18,20 @@ class TutorialController extends Controller
     public function create($weight, $age, $height)
     {
     	if ($age <= 40 && $weight >= $height + 9) {
-    		//todo return route program muc do nang
-    		return "nang";
+    		$actions = Action::where('lever', 'Nặng')
+                                ->get();
     	} elseif ($age > 50) {
-    		//todo return route program muc do nhe
-    		return 'nhe';
+    		$actions = Action::where('lever', 'Nhẹ')
+                                ->get();
     	} else {
-    		//todo return route program muc do trung binh
-    		return 'trungbinh';
-    	} 	
+    		$actions = Action::where('lever', 'Trung bình')
+                                ->get();
+        }   
+        // $response = array(
+        //     'status' => 'success',
+        //     'actions' => $actions,
+        // );
+    	// return Response::json($response);
+        
     }
 }

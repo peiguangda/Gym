@@ -44,6 +44,6 @@ Auth::routes();
 
 Route::get('/edit',[
 	'as' => 'edit',
-	'uses' => 'UsersController@getedit'
+	'uses' => 'UsersController@postedit'
 ]);
 Route::post('edit','UsersController@postedit');

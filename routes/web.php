@@ -42,3 +42,8 @@ Route::get('/programs',[
 
 Auth::routes();
 
+Route::get('/edit',[
+	'as' => 'edit',
+	'uses' => 'UsersController@getedit'
+]);
+Route::post('edit','UsersController@postedit');

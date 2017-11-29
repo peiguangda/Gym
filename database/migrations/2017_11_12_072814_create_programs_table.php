@@ -18,8 +18,6 @@ class CreateProgramsTable extends Migration
             $table->string('name');
             $table->text('descript');
             $table->string('image');
-            $table->integer('id_user')->unsigned();;
-            $table->foreign('id_user')->references('id')->on('users');
             $table->timestamps();
         });
     }

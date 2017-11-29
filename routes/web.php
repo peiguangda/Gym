@@ -25,7 +25,7 @@ Route::get('/tutorial',[
 	'uses' => 'TutorialController@index'
 ]);
 
-Route::get('/tutorial/weight/{weight}/age/{age}/height/{height}',[
+Route::get('/tutorial/result',[
 	'as' => 'tutorial.result',
 	'uses' => 'TutorialController@create'
 ]);
@@ -44,11 +44,16 @@ Auth::routes();
 
 Route::get('/edit',[
 	'as' => 'edit',
-	'uses' => 'UsersController@postedit'
+	'uses' => 'UsersController@edit'
 ]);
 Route::post('edit','UsersController@postedit');
 
 Route::get('/search',[
 	'as'=>'search',
 	'uses'=>'SearchController@getSearch'
+]);
+
+Route::get('add/{uId}/{aId}',[
+	'as' => 'action.store',
+	'uses' => 'RegesterController@store'
 ]);

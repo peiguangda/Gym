@@ -77,25 +77,22 @@
       }
   });
 
-  $("button#getProgram").on('click',function(){
-    var weight = $('#weight').val();
-    var age = $('#age').val();
-    var height = $('#height').val();
-    var URL = "http://localhost:8000/tutorial/weight/" + weight + "/age/" + age + "/height/" + height;
-    console.log(URL);
+  $("button#add_action").on('click',function(){
+    var actionId = $(this).attr('action_id');
+    var userId = $(this).attr('user_id');
+    var URL = "http://localhost:8000/add/" + userId + "/" + actionId;
+
     $.ajax({
       type : 'GET',
       url : URL,
       cache : false,
       error: function(data){
-        console.log("Error");
+        console.log("data");
       },
 
       success : function(msg){
         console.log(msg);
-        var html = "";
-        html += "<p>adsf</p>"
-        $("div#showProgram").append(html);
+        $("button#add_action").val("Ok da dang ki") ;
       }
 
     })

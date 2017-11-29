@@ -7,6 +7,5 @@ $factory->define(App\Program::class, function (Faker $faker) {
         'name' => $faker->name,
         'descript' => implode('',$faker->sentences),
         'image' => $faker->imageUrl(1000,500),
-        'id_user' => $faker->numberBetween($min=0, $max=20),
     ];
 });

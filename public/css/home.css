@@ -381,3 +381,9 @@ img {
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
 }
+
+/*show program*/
+.floating-box {
+    width: 280px;
+    display: inline-block;
+}

@@ -1,9 +1,9 @@
 @extends('layouts.master')
 @section('content')
 <div class="container">
-	<h4>Tìm kiếm</h4>
+	<h3>Tutorial</h3>
 		<div class="beta-products-details">
-			<p class="pull-left">Tìm thấy {{count($search1)}} action</p>
+			<p class="pull-left">Found {{count($search1)}} action</p>
 			<div class="clearfix"></div>
 		</div>
 @foreach ($search as $action)

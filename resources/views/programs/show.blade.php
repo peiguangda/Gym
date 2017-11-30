@@ -8,6 +8,11 @@
             <h2>{{$action->name}}</h2>
             <p class="floating-box">HLV :{{$action->trainer}}</p>
             <p class="floating-box">Time practice :{{$action->timepractice}}</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
             <p class="floating-box">Lever :{{$action->lever}}</p>
             <button type="button" name="add_action" action_id ="{{$action->id}}" user_id ="{{\Auth::user()->id}}" id="add_action" class="btn btn-danger">Dang ki</button>
         </div>

@@ -16,7 +16,6 @@
   <div class="hero">
     <hgroup>
         <h1>Giảm cân hiệu quả</h1>        
-        <h3>Thân hình cân đối</h3>
     </hgroup>
   </div>
 </div>
@@ -24,8 +23,7 @@
   <div class="slide-2"></div>
   <div class="hero">        
     <hgroup>
-        <h1>Giảm cân nhanh</h1>        
-        <h3>Bài tập giảm cân hiệu quả</h3>
+        <h1>Giảm cân nhanh</h1>
     </hgroup>       
   </div>
 </div>
@@ -34,7 +32,6 @@
   <div class="hero">        
     <hgroup>
         <h1>Giảm cân 1 cách khoa hoc</h1>        
-        <h3>thu hút ánh nhìn</h3>
     </hgroup>
   </div>
 </div>

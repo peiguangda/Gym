@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="http://localhost:8000/css/superfish.css">
 
   <link rel="stylesheet" href="http://localhost:8000/css/style.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Modernizr JS -->
   <script src="http://localhost:8000/js/modernizr-2.6.2.min.js"></script>

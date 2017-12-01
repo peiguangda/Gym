@@ -5,7 +5,7 @@
         <div class="col-md-4 column productbox">
             <img src="{{$programs[$index]->image}}" class="img-responsive">
             <div class="producttitle">{{$action->name}}</div>
-            <div class="productprice"><div class="pull-right"><a type="button" id="btn-buy" class="btn btn-danger btn-sm" role="button">Detail</a></div><div class="pricetext"></div></div>
+            <div class="productprice"><div class="pull-right"><a href="{{route('action.show', $action->id)}}" type="button" id="btn-buy" class="btn btn-danger btn-sm" role="button">Detail</a></div><div class="pricetext"></div></div>
         </div>
     </div>
     @endforeach

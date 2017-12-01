@@ -18,7 +18,7 @@ class ProgramController extends Controller
     public function show($id)
     {
     	$actions = Action::where('id_program',$id)->paginate(4);
-    	return view('programs.show')->with('actions', $actions);
+    	return view('actions.index')->with('actions', $actions);
     }
     
 }

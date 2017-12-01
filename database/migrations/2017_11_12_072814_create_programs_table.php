@@ -17,6 +17,7 @@ class CreateProgramsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->text('descript');
+            $table->string('trainer');
             $table->string('image');
             $table->timestamps();
         });

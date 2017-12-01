@@ -7,7 +7,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{route('home')}}"> <strong>Gym</strong> </a>
+        <a class="navbar-brand" href="{{route('home')}}"> <strong>FitNess</strong> </a>
     </div>
 
     <div class="collapse navbar-collapse js-navbar-collapse">
@@ -21,7 +21,7 @@
         <ul class="nav navbar-nav">
             <li><a href="{{route('tutorial')}}">Tutorial</a></li>
             <li><a href="{{route('programs')}}">Programs</a></li>
-
+            <li><a href="{{route('tops')}}">Tops ranking</a></li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">

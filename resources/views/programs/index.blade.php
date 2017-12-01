@@ -8,6 +8,7 @@
             <h2>{{$program->name}}</h2>
             <img src="{{$program->image}}">
             <p>{{$program->descript}}</p>
+            <p>HLV : {{$program->trainer}}</p>
             <p><a href="{{route('program.show',$program->id)}}">Read more</a></p>
         </div>
     </div>

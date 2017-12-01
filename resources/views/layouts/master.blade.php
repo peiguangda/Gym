@@ -88,11 +88,16 @@
       cache : false,
       error: function(data){
         console.log("data");
+        alert('Dang ki that bai!')
       },
 
       success : function(msg){
         console.log(msg);
-        $("button#add_action").val("Ok da dang ki") ;
+        if (msg.status == "success") {
+          alert('Dang ki thanh cong!');
+        } else{
+          alert('Ban da dang ki khoa hoc nay roi!');
+        }
       }
 
     })

@@ -20,6 +20,11 @@ Route::get('/home',[
 	'uses' => 'HomeController@index'
 ]);
 
+Route::get('/tops',[
+	'as' => 'tops',
+	'uses' => 'RateController@index'
+]);
+
 Route::get('/tutorial',[
 	'as' => 'tutorial',
 	'uses' => 'TutorialController@index'
@@ -33,6 +38,11 @@ Route::get('/tutorial/result',[
 Route::get('/programs/{id}',[
 	'as' => 'program.show',
 	'uses' => 'ProgramController@show'
+]);
+
+Route::get('/actions/{id}',[
+	'as' => 'action.show',
+	'uses' => 'ActionController@show'
 ]);
 
 Route::get('/programs',[

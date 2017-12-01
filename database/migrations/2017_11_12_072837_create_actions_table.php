@@ -17,9 +17,9 @@ class CreateActionsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('rate');
-            $table->string('trainer');
             $table->float('timepractice');
             $table->string('lever');
+            $table->text('descript');
             $table->integer('id_user')->unsigned();;
             $table->integer('id_program')->unsigned();;
             $table->foreign('id_user')->references('id')->on('users');

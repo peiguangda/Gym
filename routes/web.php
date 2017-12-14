@@ -67,3 +67,8 @@ Route::get('add/{uId}/{aId}',[
 	'as' => 'action.store',
 	'uses' => 'RegesterController@store'
 ]);
+
+Route::get('destroy/{uId}/{aId}',[
+	'as' => 'action.destroy',
+	'uses' => 'RegesterController@destroy'
+]);

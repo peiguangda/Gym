@@ -102,6 +102,32 @@
 
     })
   });
+
+  $("a#btn-remove").on('click',function(){
+    var actionId = $(this).attr('action_id');
+    var userId = $(this).attr('user_id');
+    var URL = "http://localhost:8000/destroy/" + userId + "/" + actionId;
+
+    $.ajax({
+      type : 'GET',
+      url : URL,
+      cache : false,
+      error: function(data){
+        console.log("data");
+        alert('Xoa that bai!')
+      },
+
+      success : function(msg){
+        console.log(msg);
+        if (msg.status == "success") {
+          $('.'+actionId).fadeOut("slow");
+        } else{
+          $('.'+actionId).fadeOut("slow");
+        }
+      }
+
+    })
+  });
 </script>
 
 </html>

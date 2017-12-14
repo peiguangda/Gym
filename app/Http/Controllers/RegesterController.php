@@ -19,7 +19,6 @@ class RegesterController extends Controller
                 return Response::json($response);
             }
         }
-        
 
         Regester::create([
                 'id_user' => $userId,
@@ -27,5 +26,14 @@ class RegesterController extends Controller
 
         $response = array('status' => 'success',);
     	return Response::json($response);
+    }
+
+    public function destroy($userId, $actionId)
+    {
+        $regester = Regester::where('id_user', $userId)
+                            ->where('id_action', $actionId)->first();
+        if ($regester != null) $regester->delete();
+        $response = array('status' => 'success',);
+        return Response::json($response);
     }
 }
